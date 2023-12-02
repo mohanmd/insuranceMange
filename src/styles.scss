@@ -1,1 +1,184 @@
 /* You can add global styles to this file, and also import other style files */
+$secondary-color: #FFD470;
+$primary-color: #0B3948;
+$bodybg : #f7f5f2;
+
+*{
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+  background-color: $bodybg;
+}
+
+body {
+  margin: 0;
+  font-family: 'Montserrat Alternates', sans-serif;
+}
+
+// heading
+h1, h2, h3, h4, h5, h6 {
+  margin-top: 0;
+}
+p{
+  color: #61696d;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 26px;
+  margin: 0;
+  margin-bottom: 10px;
+}
+// ##### list type
+ul.type_dot{
+  list-style-type: disc;
+}
+.type_circle{
+  list-style-type: circle;
+}
+ul li {
+  color: #61696d;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 26px;
+  margin: 0;
+  margin-bottom: 5px;
+}
+a{
+  text-decoration: none;
+}
+body{
+  .mr-1 {
+    margin-right: 10px;
+  }
+  .mt-20{
+    margin-top: 20px;
+  }
+  .mb-20{
+    margin-bottom: 20px;
+  }
+  
+}
+.center {
+  text-align: center;
+}
+
+.section_container {
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 0 15px;
+  box-sizing: border-box;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -15px;
+}
+
+.col-12 {
+  flex: 0 0 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+  padding: 15px;
+}
+
+.col-6 {
+  flex: 0 0 50%;
+  max-width: 50%;
+  box-sizing: border-box;
+  padding: 15px;
+}
+.col-5 {
+  flex: 0 0 41.666667%;
+  max-width: 41.666667%;
+  padding: 15px;
+  box-sizing: border-box;
+}
+
+.col-7 {
+  flex: 0 0 58.33%; /* 7/12 = 0.5833 */
+  max-width: 58.33%;
+  padding: 15px;
+  box-sizing: border-box;
+}
+
+.col-4 {
+  flex: 0 0 33.333333%;
+  max-width: 33.333333%;
+  box-sizing: border-box;
+  padding: 15px;
+}
+
+.col-3 {
+  flex: 0 0 25%;
+  max-width: 25%;
+  box-sizing: border-box;
+  padding: 15px;
+}
+
+.bg_light{
+  background-color: #FFFFFF;
+}
+.text_light{
+  color: #FFFFFF;
+}
+
+// ##### BUTTON #####
+button{
+  cursor: pointer;
+}
+.btn.solid {
+  padding: 20px 35px;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 20px;
+  border-style: none;
+  border-radius: 6px;
+  &.small{
+    padding: 10px 25px;
+    font-size: 14px;
+  }
+
+  &.primary_btn {
+    color: #FFFFFF;
+    background-color: $primary-color;
+  }
+
+  &.secondary_btn {
+    color: $primary-color;
+    background-color: $secondary-color;
+  }
+}
+
+.bg_green{
+  background-color: $primary-color;
+}
+
+// ##### title
+.section-title {
+  margin: 5px 0px 15px 0px;
+  font-size: 36px;
+  font-weight: 600;
+  text-transform: capitalize;
+  line-height: 43px;
+  letter-spacing: -0.4px;
+  .color_green{
+    color: $primary-color;
+  }
+}
+
+.home_short_title {
+  margin: 0px 0px 20px 0px;
+  padding: 10px 15px 8px 15px;
+  background-color: #FFFFFF;
+  border-radius: 18px;
+  font-size: 13px;
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height: 16px;
+  width: fit-content;
+  &.center{
+    margin: 0 auto;
+  }
+}
